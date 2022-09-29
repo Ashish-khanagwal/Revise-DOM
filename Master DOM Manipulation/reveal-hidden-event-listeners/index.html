@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal-Hidden</title>
+    <style>
+      body {
+        background: linear-gradient(#0f2027, #203a43, #2c5364);
+        height: 100vh;
+        font-family: "Lato", sans-serif;
+      }
+      #main-heading {
+        color: #fff;
+        font-size: 5rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .reveal-btn {
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      button {
+        font-weight: 400;
+        padding: 15px;
+        text-align: center;
+        font-size: 45px;
+        color: #fff;
+        height: 45vh;
+      }
+      .hidden-content {
+        font-size: 25px;
+        font-weight: 400;
+        color: #fff;
+        padding: 25px;
+        width: 60vh;
+        text-align: center;
+        align-self: stretch;
+        border: 2px solid #fff;
+        border-radius: 15px;
+      }
+      .hidden-content {
+        display: none;
+      }
+      .hidden-content.reveal-btn {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+      <button class="reveal-btn boxes">Reveal more</button>
+      <div class="hidden-content boxes">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
+        corrupti iste dolorem vero neque provident magni. Inventore, eius, aut
+        provident voluptates neque qui id quam sint vel molestias laborum.
+        Repellat, itaque odit magni consequuntur unde vero dolor deserunt
+        accusamus animi totam repellendus quos laboriosam sapiente. Laudantium
+        accusamus animi totam repellendus quos laboriosam sapiente. Laudantium
+        iure, officia quaerat eum earum, amet praesentium assumenda sed autem
+        iure, officia quaerat eum earum, amet praesentium assumenda sed autem
+        asperiores similique dolor. asperiores similique dolor.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
