@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propagation</title>
+    <style>
+      body {
+        background: linear-gradient(#0f2027, #203a43, #2c5364);
+        height: 100vh;
+        font-family: "Lato", sans-serif;
+        border: 15px solid #fff;
+        position: relative;
+      }
+      .div2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 10px solid #fff;
+        border-radius: 15px;
+        max-width: 15vw;
+        height: 40vh;
+        padding: 20px;
+        font-size: 60px;
+        font-weight: 800;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .div1 {
+        height: 25vh;
+        width: 10vw;
+        font-size: 50px;
+        border: 5px solid #fff;
+        border-radius: 15px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* position: relative; */
+      }
+      .btn {
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 12px;
+        cursor: pointer;
+        align-self: center;
+        width: 70%;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+      }
+      button {
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div2 div">
+      2
+      <div class="div1 div">
+        1
+        <button class="btn">Click</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
