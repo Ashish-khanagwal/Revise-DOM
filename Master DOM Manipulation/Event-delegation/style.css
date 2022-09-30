@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(#0f2027, #203a43, #2c5364);
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+#sports {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 12vw;
+}
+
+li {
+  padding: 10px;
+  border: 2px solid #fff;
+  list-style: none;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+li:not(:last-child) {
+  margin-bottom: 8px;
+}
